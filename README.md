@@ -1,37 +1,29 @@
-# Grade Estimation Project
+# Insurance Price Estimation Project
 
-This project applies machine learning algorithms to estimate student grades based on various features such as travel time, study time, gender, internet access, free time, family support, and more. The implementation is done in a Jupyter Notebook (`gradeEstimation.ipynb`) using data from the `student-mat.csv` file.
+This project is designed to address the needs of an insurance company by utilizing machine learning to estimate prices for new patient entries based on existing data. The project involves a dataset stored in `insurance.csv` and a Jupyter Notebook `patientPrice.ipynb` that implements the machine learning workflow.
 
 ## Project Overview
 
-The goal of this project is to predict student grades using a dataset containing students' personal and academic information. Key features include:
+The primary goal of this project is to use patient data to train a machine learning model that can accurately estimate the insurance cost for new patients. The model is built using the `scikit-learn` library, leveraging various features from the dataset to make predictions.
 
-- **Travel Time**: Time taken by the student to travel from home to school.
-- **Study Time**: Weekly study hours.
-- **Gender**: Student's gender.
-- **Internet Access**: Availability of internet access at home.
-- **Free Time**: Free time available after school.
-- **Family Support**: Level of support from family.
+## Files Included
 
-The workflow includes data preprocessing, visualization, and model training to make accurate grade predictions.
+- **insurance.csv**: This file contains the patient information used for training the machine learning model. It includes features such as age, sex, BMI, children, smoker status, region, and charges.
 
-## Files in the Repository
+- **patientPrice.ipynb**: This Jupyter Notebook file contains the entire workflow, from data exploration and preprocessing to model training, evaluation, and predictions for new entries. It provides a step-by-step guide to how the machine learning model is built and used.
 
-- **`gradeEstimation.ipynb`**: Jupyter Notebook containing the project workflow, from data loading to model prediction.
-- **`student-mat.csv`**: Dataset file with student information used for training and testing the models.
+## Key Features
 
-## Dependencies
+- **Data Exploration and Visualization**: The project starts with an exploration of the `insurance.csv` dataset, including visualizations to understand the distribution of features and their relationships with the insurance charges.
 
-The project requires the following Python libraries:
+- **Data Preprocessing**: The notebook demonstrates how to clean and preprocess the data, including encoding categorical variables, handling missing values, and feature scaling.
 
-- `pandas`
-- `numpy`
-- `matplotlib`
-- `seaborn`
-- `scikit-learn`
-- `jupyter`
+- **Model Training**: Various machine learning algorithms from `scikit-learn` are tested, and the best-performing model is selected based on evaluation metrics.
 
-Install the dependencies using:
+- **Prediction**: The trained model is used to predict insurance costs for new patient entries, demonstrating the practical application of the model.
 
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn jupyter
+## How to Run
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/insurance-price-estimation.git

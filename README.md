@@ -27,3 +27,5 @@ The primary goal of this project is to use patient data to train a machine learn
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/korkuthuseyin/patientPrice_ML.git
+
+***This line added via powershell on windows
